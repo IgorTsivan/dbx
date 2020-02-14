@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: rgb(199,199,199);
+    background: linear-gradient(0deg, rgba(199,199,199,1) 0%, rgba(71,71,71,1) 100%);
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+.list_block{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+    color: #fff;
+}
+.img_f{
+    width: 30px;
+    margin: 2px;
+}
+.name{
+    cursor: pointer;
+    font-weight: 700;
+}
+.list_block:hover .name{
+    color: rgb(0, 0, 0)!important;
+    transition: .3s;
+}
+.list_block:hover #dropdownMenuButton{
+    display: block;
+}
+.info_block ul{
+    list-style: none;
+}
+.size, .date{
+    font-size: 14px;
+}
+.info_block button{
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+}
+#dropdownMenuButton{
+    text-align: center;
+    height: 30px!important;
+    display: none;
+    background-color: #000;
+    border-color: #000;
+}
+.custom-control-input:checked~.custom-control-label::before{
+    border-color: #000!important;
+    background-color: #000!important;
+}
+.btn-primary.focus, .btn-primary:focus, .custom-control-input:checked~.custom-control-label::before{
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5)!important;
+}
+.dropdown-toggle::after{
+    vertical-align: .420em!important;
+}
+.nav-link{
+    margin: 0 40px;
+    border: none;
+    background: transparent;
+    text-transform: uppercase;
+    color: #fff!important;
+    font-weight: 700;
+    font-size: 20px;
+    outline: none!important;
+    transition: .3s;
+}
+.nav-link:hover{
+    color: rgb(70, 70, 70)!important;
+    transition: .3s ease-in-out;
+}
+.nav-link:disabled{
+    color: rgba(0, 0, 0, 0.356)!important;
+    transition: .3s ease-in-out;
+}
+.navbar-nav{
+    margin: 0 auto;
+}
+.navbar{
+    box-shadow: 0px 5px 15px -4px rgba(0,0,0,0.75);
+    margin-bottom: 30px;
+    background: rgb(215,215,215);
+    background: linear-gradient(90deg, rgba(215,215,215,1) 0%, rgba(71,71,71,1) 100%);
+}
+.name{
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    margin-left: 5px;
+    outline: none!important;
+}
+.btnBack{
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    display: block;
+    position: absolute;
+    z-index: 100;
+    border: none;
+    top: 10px;
+    left: 110px;
+    transition: .2s;
+}
+.btnBack:hover{
+    transform: scale(1.2);
+    transition: .2s;
+}
+.btnBack:active{
+    transform: scale(0.8);
+    transition: .2s;
+}
+.btnBack:active, .btnBack:focus{
+    outline: none;
+}
+.img_btn{
+    width: 100%;
+}
+
+.tooltips{
+    width: auto;
+    position: absolute;
+    z-index: 10;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: none;
+}
+.tooltips p{
+    padding: 0 10px;
+}
+.tooltips h5{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+}
+input[value="Disabled"]{
+    color: rgba(0, 0, 0, 0.5)!important;
+}
+input[value="Disabled"]:hover{
+    cursor: default;
+    color: rgba(0, 0, 0, 0.5)!important;
+}
+input[value="Disabled"]:focus ~ .tooltip_block > .tooltips{
+    display: block;
+}
+.download{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    padding: 5px;
+    margin: 5px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    text-decoration: none;
+}
+.download:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 1);
+}
+.downActive{
+    display: inline-block;
+}
